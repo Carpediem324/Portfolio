@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <!-- bootstrap icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="time" id="time">12:00 PM</div>
+        <button id="theme-toggle">Dark Mode</button>
+      </header>
+
+      <div class="content-wrapper">
+        <aside class="sidebar">
+            <ul>
+                <li>
+                    <a href="#first">
+                        <img src="./icons/vscode.png" style="width: 3rem; height: 3rem" />
+                    </a>
+                </li>
+                <li>
+                    <a href="#projects">
+                        <img src="./icons/firefox.png" style="width: 3rem; height: 3rem" />
+                    </a>
+                </li>
+                <li>
+                    <a href="#videos">
+                        <img src="./icons/thunderbird.png" style="width: 3rem; height: 3rem" />
+                    </a>
+                </li>
+                <li>
+                    <a href="#contact">
+                        <img src="./icons/chrome.png" style="width: 3rem; height: 3rem" />
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/Carpediem324" target="_blank">
+                        <i class="icons bi bi-github" style="font-size: 3rem"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/Carpediem324" target="_blank">
+                        <i class="icons bi bi-instagram" style="font-size: 3rem"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="mailto:s01087350661@gmail.com">
+                        <i class="bi bi-google" style="font-size: 3rem"></i>
+                    </a>
+                </li>
+            </ul>
+        </aside>
+
+        <main class="backgroud-img">
+          <h1 class="title-ment" id="first">Shin HyeonHak's Portfolio</h1>
+          <section class="boxes" id="about">
+            <h1>Hello!</h1>
+            <div class="about-content">
+              <div class="about-info">
+                <p>I am a robot programmer with expertise in ROS1 and ROS2.</p>
+                <p><strong>Name:</strong> Shin HyeonHak</p>
+                <p><strong>Age:</strong> 25</p>
+                <p><strong>Education:</strong> Bachelor of Computer Engineering from Korea University of Technology and Education</p>
+                <p><strong>Field of Study:</strong> Computer Science and Engineering</p>
+                <p><strong>Specializations:</strong></p>
+                <ul>
+                  <li>Robot Programming</li>
+                  <li>Autonomous Driving</li>
+                  <li>Localization</li>
+                  <li>Lidar SLAM</li>
+                  <li>ROS1, 2</li>
+                </ul>
+                <p><strong>Programming Languages:</strong> C, C++, Python</p>
+                <p><strong>Experience:</strong></p>
+                <ul>
+                  <li>Yeosu City Hall Administration Intern (Samil-dong Post Office)</li>
+                  <li>Internship at Korea Atomic Energy Research Institute (KAERI)</li>
+                  <li>SAMSUNG SW ACADEMY FOR YOUTH (SSAFY) (In Progress)</li>
+                </ul>
+              </div>
+              <div class="about-image">
+                <img src="./icons/carpediem324.png" alt="Profile Image">
+              </div>
+            </div>
+          </section>
+          
+
+          <section class="boxes" id="projects">
+            <h2>Projects</h2>
+            <article>
+              <h3>Project 1: Space Exploration Rover LAPIS Web Panel Development</h3>
+              <p>Developed a webpage to display the status of the robot using WEBRTC and roslib.js.</p>
+            </article>
+            <article>
+              <h3>Project 2: Indoor SLAM and 2D Radiation Mapping using Unitree Go1</h3>
+              <p>Utilized the quadruped robot Go1 for indoor SLAM and radiation measurement, creating a 2D radiation map using pyQtgraph.</p>
+            </article>
+            <article>
+              <h3>Project 3: Mock Interview Website using STT, ChatGPT API, and Firebase</h3>
+              <p>Developed a mock interview website where users can answer questions through a microphone. The site provides Speech To Text conversion, grammar checks, and additional questions using ChatGPT API.</p>
+            </article>
+            <article>
+              <h3>Project 4: Autonomous Driving and Localization using Wego's ERP-42 Platform</h3>
+              <p>Implemented vehicle position and heading estimation using Wheeltec N100 IMU, Synerex MRP-2000, and SMC-2000 on the ERP-42 platform.</p>
+            </article>
+          </section>
+          
+
+          <section class="boxes" id="videos">
+            <h2>Videos</h2>
+            <div class="video-wrapper">
+                <p>STUDENT CREATIVE MOBILITY COMPETITION 2023 Unmanned Mobility part</p>
+                <div class="video-container">
+                    <iframe
+                        src="https://www.youtube.com/embed/g-u4luKR8nU?start=16490"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen
+                    ></iframe>
+                </div>
+            </div>
+            <div class="video-wrapper">
+                <p>Korea Coast Guard</p>
+                <div class="video-container">
+                    <iframe
+                        src="https://www.youtube.com/embed/_kO_IIGpHZE?start=32"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen
+                    ></iframe>
+                </div>
+            </div>
+        </section>
+
+          <section class="boxes" id="contact">
+            <h2>Contact</h2>
+            <div class="contact-info">
+              <div class="contact-item">
+                <i class="bi bi-envelope"></i>
+                <p>
+                  Email:
+                  <a href="mailto:s01087350661@gmail.com"
+                    >s01087350661@gmail.com</a
+                  >
+                </p>
+              </div>
+              <div class="contact-item">
+                <i class="bi bi-telephone"></i>
+                <p>
+                  Phone-number: <a href="tel:+821056870661">+82 10-5687-0661</a>
+                </p>
+              </div>
+            </div>
+          </section>
+        </main>
+      </div>
+
+      <footer>
+        <p>&copy; 2024 Portfolio</p>
+      </footer>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

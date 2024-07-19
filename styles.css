@@ -1,0 +1,348 @@
+/* Basic Styles */
+* {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+body {
+  font-family: "Ubuntu", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f7f7f7; /* Ubuntu background color */
+  color: #000000;
+  display: flex;
+  flex-wrap: wrap;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+header {
+  background-color: #2c001e; /* Ubuntu color */
+  width: 100%;
+  height: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+}
+
+header .time {
+  color: #fff;
+  text-align: center;
+  flex: 1;
+  font-size: 11px;
+  margin-left: 6rem;
+}
+
+#theme-toggle {
+  background-color: #333;
+  font-size: 10px;
+  height: 1.5rem;
+  width: 5rem;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.content-wrapper {
+  margin-top: 1.5rem;
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.sidebar {
+  background-color: #2c001e; /* Ubuntu color */
+  width: 70px;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 1rem;
+  justify-content: space-between;
+  transition: transform 0.3s ease;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar ul li {
+  margin-bottom: 1rem;
+}
+
+.sidebar ul li a img {
+  width: 40px;
+  height: 40px;
+}
+
+.boxes {
+  margin-right: 1.5rem;
+  margin-left: 1.5rem;
+}
+main {
+
+    margin-left: 4.3rem;
+  width: 100%;
+}
+
+section {
+  margin-bottom: 3vw;
+  background-color: #f0f8ff;
+  padding: 3vw;
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 10px 4px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  background-color: #2c001e; /* Ubuntu color */
+  color: #fff; /* Text color */
+  z-index: 0;
+}
+
+@media (max-width: 762px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+    justify-content: space-around;
+    transform: translateX(-100%);
+  }
+
+  main {
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+  }
+}
+
+.backgroud-img {
+  background-image: url("./images/ubuntu_back.jpg");
+  background-size: cover; /* Ensure the background image covers the entire element */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* Fix the background image */
+  height: 100%; /* Set the height to 100% of the viewport height */
+  width: 100%; /* Set the width to 100% of the element's width */
+  z-index: -6;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+  background-color: #333;
+  color: #fff; /* 글씨색 */
+}
+
+body.dark-mode header {
+  background-color: #2c001e; /* Dark mode Ubuntu color */
+}
+
+body.dark-mode nav ul li a {
+  color: black;
+}
+
+body.dark-mode #theme-toggle {
+  background-color: #fff;
+  color: #000000;
+}
+
+body.dark-mode section {
+  background-color: rgba(
+    50,
+    50,
+    50,
+    0.8
+  ); /* Dark mode section background color */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+body.dark-mode .about-image img {
+  filter: brightness(0.5) contrast(1.8);
+}
+.title-ment {
+  color: #f7f7f7;
+  font-size: 5vw;
+  align-items: center;
+  text-align: center;
+}
+/* 영상부분 */
+
+#videos{
+    position: relative;
+}
+
+.video-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin-bottom: 2rem;
+}
+.video-container {
+    position: relative;
+    width: 80%; /* 원하는 너비 조정 */
+    padding-bottom: 56.25%; /* 16:9 비율을 위해 56.25% 사용 */
+    height: 0;
+    overflow: hidden;
+}
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+/* ---------- */
+
+#contact {
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+#contact h2 {
+  font-size: 5vw;
+  margin-bottom: 1rem;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.contact-item i {
+  font-size: 2.3vw;
+  margin-right: 0.5rem;
+  color: #007bff;
+}
+
+.contact-item p {
+  margin: 0;
+  font-size: 2.3vw;
+}
+
+.contact-item a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+.contact-item a:hover {
+  text-decoration: underline;
+}
+
+#about {
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#about h1 {
+  font-size: 5vw;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.about-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.about-info {
+  max-width: 60%;
+}
+
+.about-info p,
+.about-info ul {
+  font-size: 2.3vw;
+  margin: 0.5rem 0;
+}
+
+.about-info ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+}
+
+.about-info ul li {
+  margin-bottom: 0.5rem;
+}
+.about-image {
+  max-width: 35%;
+  text-align: center;
+}
+
+.about-image img {
+  max-width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#projects {
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+}
+
+#projects h2 {
+  text-align: center;
+  font-size: 5vw;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+#projects article {
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#projects article:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+#projects h3 {
+  font-size: 3vw;
+  color: #007bff;
+  margin-bottom: 1rem;
+}
+
+#projects p {
+  font-size: 2.3vw;
+  line-height: 1.6;
+  margin: 0;
+}
+
+#projects p::before {
+  content: "• ";
+  font-weight: bold;
+}
